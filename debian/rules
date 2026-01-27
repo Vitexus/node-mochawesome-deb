@@ -6,18 +6,18 @@
 override_dh_auto_configure:
 	# Download the source from GitHub
 	if [ ! -d mochawesome ]; then \
-		git clone --depth 1 --branch v7.1.4 https://github.com/Vitexus/mochawesome.git; \
+		git clone --depth 1 --branch master https://github.com/Vitexus/mochawesome.git; \
 	fi
 
 override_dh_auto_build:
 	# No build needed for this package
 
 override_dh_auto_install:
-	mkdir -p debian/node-mochawesome/usr/share/nodejs/mochawesome
-	cp -r mochawesome/src debian/node-mochawesome/usr/share/nodejs/mochawesome/
-	cp mochawesome/addContext.js debian/node-mochawesome/usr/share/nodejs/mochawesome/
-	cp mochawesome/register.js debian/node-mochawesome/usr/share/nodejs/mochawesome/
-	cp mochawesome/package.json debian/node-mochawesome/usr/share/nodejs/mochawesome/
+	mkdir -p debian/node-mochawesome/usr/lib/nodejs/mochawesome
+	cp -r mochawesome/src debian/node-mochawesome/usr/lib/nodejs/mochawesome/
+	cp mochawesome/addContext.js debian/node-mochawesome/usr/lib/nodejs/mochawesome/
+	cp mochawesome/register.js debian/node-mochawesome/usr/lib/nodejs/mochawesome/
+	cp mochawesome/package.json debian/node-mochawesome/usr/lib/nodejs/mochawesome/
 
 override_dh_auto_test:
 	# Skip tests during build

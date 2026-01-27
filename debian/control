@@ -3,13 +3,8 @@ Section: javascript
 Priority: optional
 Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
 Build-Depends: debhelper-compat (= 13),
- dh-sequence-nodejs,
- node-chalk,
- node-diff,
- node-json-stringify-safe,
- node-lodash,
- node-strip-ansi,
- node-uuid
+ git,
+ nodejs
 Standards-Version: 4.6.2
 Homepage: https://github.com/adamgruber/mochawesome
 Vcs-Git: https://github.com/Vitexus/mochawesome.git
@@ -19,14 +14,14 @@ Rules-Requires-Root: no
 Package: node-mochawesome
 Architecture: all
 Depends: ${misc:Depends},
+ nodejs:any
+Recommends: mocha,
  node-chalk,
  node-diff,
  node-json-stringify-safe,
  node-lodash,
  node-strip-ansi,
- node-uuid,
- nodejs:any
-Recommends: mocha
+ node-uuid
 Description: gorgeous reporter for Mocha.js
  Mochawesome is a custom reporter for use with the Javascript testing
  framework, mocha. It runs on Node.js and works in conjunction with

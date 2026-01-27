@@ -1,4 +1,4 @@
-mochawesome/src/* usr/share/nodejs/mochawesome/src/
-mochawesome/addContext.js usr/share/nodejs/mochawesome/
-mochawesome/register.js usr/share/nodejs/mochawesome/
-mochawesome/package.json usr/share/nodejs/mochawesome/
+mochawesome/src/* usr/lib/nodejs/mochawesome/src/
+mochawesome/addContext.js usr/lib/nodejs/mochawesome/
+mochawesome/register.js usr/lib/nodejs/mochawesome/
+mochawesome/package.json usr/lib/nodejs/mochawesome/
