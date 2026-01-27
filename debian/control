@@ -1,0 +1,49 @@
+Source: node-mochawesome
+Section: javascript
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-nodejs,
+ node-chalk,
+ node-diff,
+ node-json-stringify-safe,
+ node-lodash,
+ node-strip-ansi,
+ node-uuid
+Standards-Version: 4.6.2
+Homepage: https://github.com/adamgruber/mochawesome
+Vcs-Git: https://github.com/Vitexus/mochawesome.git
+Vcs-Browser: https://github.com/Vitexus/mochawesome
+Rules-Requires-Root: no
+
+Package: node-mochawesome
+Architecture: all
+Depends: ${misc:Depends},
+ node-chalk,
+ node-diff,
+ node-json-stringify-safe,
+ node-lodash,
+ node-strip-ansi,
+ node-uuid,
+ nodejs:any
+Recommends: mocha
+Description: gorgeous reporter for Mocha.js
+ Mochawesome is a custom reporter for use with the Javascript testing
+ framework, mocha. It runs on Node.js and works in conjunction with
+ mochawesome-report-generator to generate a standalone HTML/CSS report
+ to help visualize test runs.
+ .
+ Features:
+  - Simple, clean, and modern design
+  - Beautiful charts (via ChartJS)
+  - Support for test and suite nesting
+  - Displays before and after hooks
+  - Review test code inline
+  - Stack trace for failed tests
+  - Support for adding context information to tests
+  - Filters to display only the tests you want
+  - Responsive and mobile-friendly
+  - Offline viewing
+  - Supports parallel mode
+ .
+ Node.js is an event-based server-side JavaScript engine.

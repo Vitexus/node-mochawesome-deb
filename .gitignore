@@ -1,0 +1,14 @@
+*.deb
+*.buildinfo
+*.changes
+*.dsc
+*.tar.gz
+*.tar.xz
+.debhelper/
+debian/.debhelper/
+debian/node-mochawesome/
+debian/files
+debian/*.log
+debian/*.substvars
+debian/debhelper-build-stamp
+mochawesome/

@@ -1,0 +1,7 @@
+node-mochawesome (7.1.4-1) unstable; urgency=medium
+
+  * Initial release (Closes: #XXXXXX)
+  * Package mochawesome reporter for Mocha.js
+  * Version 7.1.4 from upstream
+
+ -- Vítězslav Dvořák <info@vitexsoftware.cz>  Mon, 27 Jan 2026 17:22:00 +0100
