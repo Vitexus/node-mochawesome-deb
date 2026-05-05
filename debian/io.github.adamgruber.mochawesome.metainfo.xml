@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+  <id>io.github.adamgruber.mochawesome</id>
+  <icon type="stock">node-mochawesome</icon>
+  <metadata_license>MIT</metadata_license>
+  <project_license>MIT</project_license>
+  <name>Mochawesome</name>
+  <summary>HTML/CSS reporter for the Mocha JavaScript test framework</summary>
+  <description>
+    <p>
+      Mochawesome is a custom reporter for use with the Javascript testing framework, Mocha. It generates a standalone HTML/CSS report to help visualize your test runs.
+    </p>
+  </description>
+  <url type="homepage">https://github.com/adamgruber/mochawesome</url>
+  <url type="bugtracker">https://github.com/adamgruber/mochawesome/issues</url>
+  <developer id="io.github.adamgruber">
+    <name>Adam Gruber</name>
+  </developer>
+  <content_rating type="oars-1.1"/>
+</component>
